@@ -117,7 +117,7 @@ def simulate_ca(L, alpha, mean_thr, std_thr, min_thr, mean_res, std_res, min_res
     current_avalanche = []
     while active:
         F, active_sites = redistribute_force(F, L, alpha, F_thr, F_res, neighborhood)
-        if i % 25 == 0:
+        if i % 100 == 0:
             states.append(np.copy(F))
         i += 1
         active = len(active_sites) > 0
@@ -147,12 +147,12 @@ def simulate_ca(L, alpha, mean_thr, std_thr, min_thr, mean_res, std_res, min_res
 L = 50  # Size of the lattice
 alpha = 0.5  # Coupling constant
 mean_thr = 5  # Mean threshold
-std_thr = 0.2  # std dev of threshold
+std_thr = 0.0  # std dev of threshold
 min_thr = 3.0  # Minimum threshold
 mean_res = 0  # Mean residual force
 std_res = 0 # std dev of residual force
 min_res = 0  # Minimum residual force
-n_additions = 50000  # Number of additions
+n_additions = 20000  # Number of additions
 
 
 # Run a simulation for Moore neighborhood
@@ -172,8 +172,8 @@ def update(frame):
 
 ani = FuncAnimation(fig, update, frames=range(len(states)), interval=1/125, blit=False, repeat=False)
 
-# ani = FuncAnimation(fig, update, frames=len(states), interval=1/125, blit=True, repeat=False)
-# writer = PillowWriter(fps=15, metadata=dict(artist='Group17'), bitrate=1800)
-# ani.save('gas_only_biased_movement.gif', writer=writer)
+# Save the animation process as .gif
+writer = PillowWriter(fps=15, metadata=dict(artist='Group17'), bitrate=1800)
+ani.save('earthquake_animation.gif', writer=writer)
 
 plt.show()
