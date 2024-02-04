@@ -17,7 +17,7 @@ Here, we implement a cellular automaton according to the Olami–Feder–Christe
 
 
 ## Getting Started
-To directly view the outcomes of our simulations, you can refer to the `OFC_non_homogeneous.ipynb` notebook.
+To directly view the outcomes of our simulations, you can refer to the `OFC_final.ipynb` notebook. The process of constructing the OFC model is located in the directory `others`, and you can find additional results and comparisons of our simulation in the `OFC_non_homogenous.ipynb` notebook.
 
 
 
