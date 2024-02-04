@@ -1,13 +1,10 @@
 # group_17
-<a name="Complex System Simulation"></a>
-
-Complex system simulations repo for group 17
 
 
 <br />
 <div align="center">
   <a href="https://github.com/vitalismaxim/group_17">
-    <img src="earthquake_animation.gif" alt="Logo" width="300" height="300">
+    <img src="figures/earthquake_animation.gif" alt="Logo" width="300" height="300">
   </a>
 
 <h3 align="center">Earthquake Animation</h3>
@@ -20,7 +17,7 @@ Here, we implement a cellular automaton according to the Olami–Feder–Christe
 
 
 ## Getting Started
-To directly view the outcomes of our simulations, you can refer to the `OFC.ipynb` notebook.
+To directly view the outcomes of our simulations, you can refer to the `OFC_non_homogeneous.ipynb` notebook.
 
 
 
