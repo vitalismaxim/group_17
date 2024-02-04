@@ -7,10 +7,10 @@ Complex system simulations repo for group 17
 <br />
 <div align="center">
   <a href="https://github.com/vitalismaxim/group_17">
-    <img src="earthquake_animation.gif" alt="Logo" width="200" height="200">
+    <img src="earthquake_animation.gif" alt="Logo" width="300" height="300">
   </a>
 
-<h3 align="center">Criticality in the Cortex</h3>
+<h3 align="center">Earthquake Animation</h3>
 
   <p align="center">
 Here, we implement a cellular automaton according to the Olami–Feder–Christensen model to investigating the process of a earthquake evolving. 
